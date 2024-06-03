@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url('./assets/BACKGROUND.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: 10px;
+
+}
+
+.logo{
+    width: 155px;
+    height: 150px;
+    box-shadow: 10px 8px 12px #0000008c;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.logo::before{
+    content: "";
+    background-image: conic-gradient(
+        #ff0000 20deg, transparent);
+    width: 180%;
+    height: 160%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+.logo::after{
+    content: "";
+    width: 150px;
+    height: 145px;
+    background-color: black;
+    background-image: url("./assets/randoms.jpg");
+    background-size: cover;
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+nav ul{
+    width: 80%;
+    display: flex;
+    
+}
+
+
+nav ul li{
+    display: inline block;
+    list-style: none;
+    margin: 5px 20px;
+    margin-top: 4%;
+}
+
+nav ul li a{
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25%;
+    font-style: normal ;
+    text-decoration: underline;
+    text-shadow: 0px 0px 1px rgb(0, 255, 195);
+}
+
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 5px 10px #ea0000;
+}
+
+.VALUES{
+    float: left;
+    margin-top: 4%;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    font-style: normal;
+    }
+
+.VALUES:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 5px 10px #ea0000;
+
+    }    
+.detel{
+    margin-top: 8%;
+    text-align: right;
+    width: 44%;
+}
+
+.detel h1{
+    font-size: 75px;
+    color:  #ea0000;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    text-shadow: 1px 5px 10px rgb(0, 210, 140);
+}
+
+span{
+    color: rgb(0, 210, 140);
+    text-shadow: 1px 5px 12px #ea0000;;
+    
+}
+
+.detel p{
+    color: rgb(238, 0, 0);
+    line-height: 22px;
+    font-weight: bold;
+    
+    
+}
+
+.image{
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.image .shape{
+    opacity: 0.6;
+}
+
+.image img{
+    height: 150%;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(15%);
+    transition: bottom 2s, Left 2s;
+}
+
+@keyframes rotate{
+     0%{
+        transform: rotate(100deg);
+     }
+
+     0%{
+        transform: rotate(-360deg);
+     }
+}
