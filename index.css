@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(assets/g55.png);
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.divider {
+    
+    height: 2px;
+    border: 2px solid rgb(255, 255, 255);
+    width: 400px;
+    margin: 5px auto;
+   
+}
+.box-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: aliceblue;
+}
+h1{
+    font-size: 510%;
+    color: aliceblue;
+}
+p{
+    margin-top: 10%;
+    font-size: 130%;
+    color: aliceblue;
+}
+li a{
+    font-size: 140%;
+    color: aliceblue;
+}
+button{
+    margin-top: 30%;
+}
